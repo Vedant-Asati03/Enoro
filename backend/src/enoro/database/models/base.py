@@ -33,7 +33,7 @@ def get_db():
 def create_tables():
     """Create all database tables."""
     # Import all models to register them with SQLAlchemy
-    from . import video, channel, search  # noqa: F401
+    from . import video, channel, search, tags  # noqa: F401
 
     # Create all tables
     Base.metadata.create_all(bind=engine)
